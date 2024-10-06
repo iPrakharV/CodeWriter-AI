@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'generate.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,12 +8,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(
-          'Hello World!',
-          style: TextStyle(
-            fontSize: 24,
-            color: Colors.white,
-          ),
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const GenerateScreen()),
+            );
+          },
+          child: Text('Generate Code'),
         ),
       ),
     );

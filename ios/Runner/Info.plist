@@ -45,5 +45,9 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+
+	<!-- Add the microphone usage description key -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app requires microphone access to listen to your voice commands.</string>
 </dict>
 </plist>
